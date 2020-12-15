@@ -7,9 +7,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BrowserSteps {
 
-	protected static WebDriver driver;
+	static WebDriver driver;
 
-	protected WebDriver init() {
+	public WebDriver init() {
 
 		if (driver == null) {
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
@@ -22,7 +22,7 @@ public class BrowserSteps {
 
 	}
 
-	public static void CloseBrowser() {
+	public void CloseBrowser() {
 
 		driver.close();
 		driver.quit();

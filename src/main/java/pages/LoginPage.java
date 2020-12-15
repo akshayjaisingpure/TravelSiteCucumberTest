@@ -22,16 +22,16 @@ public class LoginPage {
 	// Interactive Methods
 	
 	public void FillEmailInput() {
-		EmailInput.sendKeys("user@phptravels.com");
+	
 	}
 
 	public void FillPasswordInput() {
-		PasswordInput.sendKeys("demouser");
+		
 	}
 	
-	public void Login() {
-		EmailInput.sendKeys("user@phptravels.com");
-		PasswordInput.sendKeys("demouser");
+	public void Login(String username, String password) {
+		EmailInput.sendKeys(username);
+		PasswordInput.sendKeys(password);
 		SubmitButton.click();
 	}
 
