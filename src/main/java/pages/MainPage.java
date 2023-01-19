@@ -16,11 +16,11 @@ public class MainPage {
 
 	// Elements Definition
 
-	@FindBy(how = How.XPATH, using = "//div[@class='dropdown dropdown-login dropdown-tab']/a")
+	@FindBy(how = How.ID, using = "ACCOUNT")
 	WebElement LoginDropDownButton;
-	@FindBy(how = How.XPATH, using = "//div/a[contains(text(),'Login')]")
+	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Customer Login')]")
 	WebElement LoginButton;
-	@FindBy(how = How.XPATH, using = "//div/a[contains(text(),'Sign Up')]")
+	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Customer Login')]")
 	WebElement SignUpButton;
 	@FindBy(how = How.XPATH, using = "//a[@id='dropdownLangauge']")
 	WebElement LanguageDropdown;

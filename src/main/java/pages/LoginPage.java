@@ -15,9 +15,9 @@ public class LoginPage {
 	
 	// Elements Library
 	
-	@FindBy(how = How.XPATH, using = "//input[@name='username']")WebElement EmailInput;
+	@FindBy(how = How.XPATH, using = "//input[@name='email']")WebElement EmailInput;
 	@FindBy(how = How.XPATH, using = "//input[@name='password']")WebElement PasswordInput;
-	@FindBy(how = How.XPATH, using = "//form/button[@type='submit']")WebElement SubmitButton;
+	@FindBy(how = How.XPATH, using = "//button/span[text()='Login']")WebElement Login;
 	
 	// Interactive Methods
 	
@@ -32,7 +32,7 @@ public class LoginPage {
 	public void Login(String username, String password) {
 		EmailInput.sendKeys(username);
 		PasswordInput.sendKeys(password);
-		SubmitButton.click();
+		Login.click();
 	}
 
 }
